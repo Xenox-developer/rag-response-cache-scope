@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-11-18T09:16:44.745118+00:00",
+  "planned_trials": 144,
+  "seed": 20261118,
+  "sha256": {
+    "PROTOCOL.md": "0334c0395eeb55041bd653eca3e07e666b2fbc224f55b9bee1eec8fe119130d7",
+    "cache.py": "546f447cb3f62a99e14266a743f480e7b5597c10e71bce996b4ec5f8867e9ed5",
+    "fixtures.json": "086fc06fb4c2038de8a3e9b14eda56d69d7460029aa5271f551537847554e2b4",
+    "schedule.json": "b6760cd5f1163ceb006634e5e2924f915a5d3b2e88cbd994169001286f7f7fb5",
+    "make_fixtures.py": "488ccb22e9a8ca01544599ffcf596192c4190562d7cac0734d23c443f1bef6f0",
+    "harness.py": "499fa053a8890c9e888a82082cf06a50948589ef8c2781ccc2b54a7793331d26",
+    "audit.py": "a74dd12e101d9593daeb19dddb0b3d3911a39a9c74374987783e0314bf4e9f47",
+    "tests/run_checks.py": "81cf93b9362748e14911cb53a1e23b917d94667ceb6da1869b5d51020d61c8a4",
+    "CANDIDATES.json": "854f39c3291bd138275a843d1ebfcc263cc5e6ce52011c717b9b1c023de8313b",
+    "SOURCES.json": "bee2952cd979d79866a6691b4e5867eb70333ed6af5fd76df948636230c75479",
+    "evidence/environment.json": "b3887c656c8395560d8a0c1654eb907eaf190579ef17ddaea140497beaaba9c4"
+  }
+}

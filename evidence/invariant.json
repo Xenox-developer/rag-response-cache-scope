@@ -1,0 +1,177 @@
+{
+  "request_id": "rag-response-cache-scope-20261118-v1",
+  "study_id": "study-034ac126549f49d58e83fd0aea6a4ce2",
+  "execution": {
+    "study_id": "study-034ac126549f49d58e83fd0aea6a4ce2",
+    "state": "completed",
+    "receipts": [
+      {
+        "schema_version": 1,
+        "study_id": "study-034ac126549f49d58e83fd0aea6a4ce2",
+        "attempt_id": "attempt-457a489ad3953e7dc0de261d090cb26a",
+        "definition_digest": "547e7b15422e89997a3431fa68d6e10e88321cf1f919d03e6738b6089b29dfad",
+        "baseline_digest": "932dcd3b9d92573dee8f6cdb57dd13b1d51ba188f569d3d2fb42eda7c7d61d05",
+        "result_digest": "d6d5f47484575f3499cab6b50309b98b5a7ad43331cacd5c6ab07b245c9c8ee9",
+        "state": "succeeded",
+        "passed": true,
+        "evaluation": {
+          "status": "completed",
+          "reason": null,
+          "reused_validation": true,
+          "validation_receipt": "docker-volume://invariant-state-v2/workspaces/cbabd866e31ee2f9f4c39cfc/experiments/attempts/attempt-457a489ad3953e7dc0de261d090cb26a/validations/5f34360ec5104c1402a5bf1be854fdd702e76ff1d89cc578d373ded43c4a4bf7/receipt.json",
+          "contract_version": "dcc767eacff2d3372d9b9951816c2e10b20c823b6fa45550185a665a2c783a35",
+          "command": "python3 -B tests/run_checks.py",
+          "test_exit_code": 0,
+          "checks": {
+            "tests": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "fixed_test_count": 9,
+          "evidence_path": "docker-volume://invariant-state-v2/workspaces/cbabd866e31ee2f9f4c39cfc/experiments/attempts/attempt-457a489ad3953e7dc0de261d090cb26a/evaluation"
+        },
+        "resources": {
+          "expected_digest": "91d37c5e6396c47845558ece35416bfd075a708758985db89ade158ccb50a2d8",
+          "observed_digest": "91d37c5e6396c47845558ece35416bfd075a708758985db89ade158ccb50a2d8"
+        },
+        "inference_usage": {
+          "complete": true,
+          "final": {
+            "cached_input_tokens": 34304,
+            "input_tokens": 45994,
+            "output_tokens": 882,
+            "reasoning_output_tokens": 17,
+            "total_tokens": 46876
+          },
+          "path": "docker-volume://invariant-state-v2/workspaces/cbabd866e31ee2f9f4c39cfc/experiments/attempts/attempt-457a489ad3953e7dc0de261d090cb26a/runner.usage.jsonl",
+          "problems": [],
+          "reconciled": true,
+          "response_count": 4
+        },
+        "execution_commands": {
+          "provenance": "executor command-completion events; not worker assertions",
+          "commands": [
+            {
+              "command": "/bin/bash -lc 'cat cache.py && cat .gitignore && git status --short'",
+              "cwd": "/workspace",
+              "status": "failed",
+              "exit_code": 128
+            }
+          ],
+          "omitted_commands": 1
+        },
+        "receipt_digest": "d2fb94d5fb4623ebf4aa7b727d49efce5fd18f830b682cdf5f968ed402de053d"
+      }
+    ],
+    "summary": {
+      "scheduled": 1,
+      "runner_successes": 1,
+      "failed": 0,
+      "cancelled": 0,
+      "pending": 0,
+      "evaluated": 1,
+      "missing_evaluations": 0,
+      "quality_passes": 1,
+      "quality_failures": 0,
+      "quality_judged": 1,
+      "missing_quality": 0,
+      "quality_pass_rate_over_scheduled": 1.0
+    },
+    "selection": {
+      "attempt_id": null,
+      "revision": 0
+    },
+    "trials": [
+      {
+        "attempt_id": "attempt-457a489ad3953e7dc0de261d090cb26a",
+        "variant_id": "medium",
+        "state": "succeeded",
+        "passed": true,
+        "duration_seconds": 41.99226665496826,
+        "reason": "COMPLETED"
+      }
+    ],
+    "trials_omitted": 0,
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 45994,
+      "cached_input_tokens": 34304,
+      "output_tokens": 882,
+      "reasoning_output_tokens": 17,
+      "total_tokens": 46876,
+      "complete": true
+    }
+  },
+  "decision": {
+    "state": "completed",
+    "decision": {
+      "approved": true,
+      "reason": "The patch implements the specified cache policies, mutations, copy isolation, and snapshot contract. The coordinator-verified invariant validation reports all eight fixed checks passing.",
+      "review_digest": "855a9f0dc98ea54dc67b00ec7a8f11f0314d31fc7bd60429bf0307e060583df5"
+    },
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "usage": {
+      "total": {
+        "totalTokens": 6917,
+        "inputTokens": 6835,
+        "cachedInputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 82,
+        "reasoningOutputTokens": 32
+      },
+      "last": {
+        "totalTokens": 6917,
+        "inputTokens": 6835,
+        "cachedInputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 82,
+        "reasoningOutputTokens": 32
+      },
+      "modelContextWindow": 475000
+    },
+    "inference_usage": {
+      "response_count": 1,
+      "complete": true,
+      "reconciled": true,
+      "problems": [],
+      "path": "docker-volume://invariant-state-v2/workspaces/cbabd866e31ee2f9f4c39cfc/tasks/8c82b3d1419d7d84d583d4c84583801406bbc690ec33681f43fe9f527f71e701-reviews/855a9f0dc98ea54dc67b00ec7a8f11f0314d31fc7bd60429bf0307e060583df5/usage.jsonl",
+      "final": {
+        "input_tokens": 6835,
+        "cached_input_tokens": 0,
+        "output_tokens": 82,
+        "reasoning_output_tokens": 32,
+        "total_tokens": 6917
+      }
+    }
+  },
+  "application": {
+    "plan_id": "plan-e83b358b391d401796aa782aa1f5e7bb",
+    "attempt_id": "attempt-457a489ad3953e7dc0de261d090cb26a",
+    "applied": true,
+    "verification": {
+      "schema_version": 1,
+      "verified": true,
+      "verified_at": 1794993296.0633562,
+      "plan_digest": "855a9f0dc98ea54dc67b00ec7a8f11f0314d31fc7bd60429bf0307e060583df5",
+      "result_digest": "d6d5f47484575f3499cab6b50309b98b5a7ad43331cacd5c6ab07b245c9c8ee9",
+      "changed_paths": 1,
+      "written_entries_digest": "009883416edf932b79c0de8074ec05af168b71c99a007825dba8f929f22b4de2",
+      "protected_inputs": 9,
+      "protected_entries_digest": "39e01381a95ba9de1653d39973d6be376ccbd8ebe69c94a3466d800f398c6f8c"
+    },
+    "container_applied": true,
+    "host_delivery_state": "committed"
+  },
+  "usage": {
+    "model_calls": 2,
+    "input_tokens": 52829,
+    "cached_input_tokens": 34304,
+    "output_tokens": 964,
+    "reasoning_output_tokens": 49,
+    "total_tokens": 53793,
+    "complete": true
+  },
+  "completion_state": "applied",
+  "original_receipt_sha256": "7380564402a075811c03f2794925c38ef5febb214f75ad33ade87f976d7289a6"
+}

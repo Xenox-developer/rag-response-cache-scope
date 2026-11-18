@@ -1,0 +1,67 @@
+[
+  {
+    "topic": "RAG response cache scope and revocation",
+    "selected": true,
+    "status": "feasible_now",
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy",
+      "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview"
+    ],
+    "dates": [
+      "Live documentation checked 2026-11-18; no publication date assumed",
+      "Live documentation checked 2026-11-18; no publication date assumed"
+    ],
+    "claim": "Cached responses need request-appropriate scope; tenant partition alone does not encode every authorization or source-content change.",
+    "experiment": "144 local deterministic request sequences: 8 fixtures x 3 cache policies x 6 schedules.",
+    "baseline": "Exact query-only key, compared with tenant key and fresh authorized context key.",
+    "metrics": "Unauthorized answers/24, stale authorized answers/8, repeat cache hits/8, correct cold denials/8, correct final responses/48 per mode.",
+    "data": "Authored documents/grants/markers and controlled mutations.",
+    "resources": "Python standard library and current Codex through INVARIANT. No measured LLM/API calls.",
+    "runtime": "Minutes after implementation; no new packages/models.",
+    "limits": "Selected counterexamples, synchronous in-memory cache, trusted driver identities, exact matching. Not semantic caching, an authentication solution, vendor benchmark or live RAG test.",
+    "classification": "Original engineering experiment; different read-side cache path from prior refund authorization and worker/retry topics.",
+    "selection": "Practical authorization/freshness boundary with complete inspectable state and negative/positive controls; no outcome-based tuning."
+  },
+  {
+    "topic": "Pre-filtering versus post-filtering scoped vector search",
+    "selected": false,
+    "status": "feasible_but_deferred",
+    "sources": [
+      "https://www.elastic.co/docs/solutions/search/vector/knn/filtered-knn-search",
+      "https://arxiv.org/abs/2611.02643"
+    ],
+    "dates": [
+      "Live documentation checked 2026-11-18",
+      "2026-11-02"
+    ],
+    "claim": "Filtering only after top-k selection can reduce eligible recall; exposure control is distinct from measured model hijacks.",
+    "experiment": "Authored vectors and eligibility sets; scoped oracle versus global top-k then filtering.",
+    "baseline": "Exact global selection followed by tenant filtering.",
+    "metrics": "Eligible recall@k, number returned, unauthorized exposure and clean availability.",
+    "data": "Synthetic vectors available; SearchInject abstract read, full artifact not audited today.",
+    "resources": "Python, optional existing local models only.",
+    "runtime": "Minutes for mathematical counterexamples; downstream evaluation needs more fixture work.",
+    "limits": "A toy would not reproduce Elastic ANN performance or SearchInject attack-success effects.",
+    "classification": "Deferred; less direct connection to the currently untested response-cache boundary."
+  },
+  {
+    "topic": "Dormant-neuron backdoor provenance",
+    "selected": false,
+    "status": "needs_resources_and_scope",
+    "sources": [
+      "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/"
+    ],
+    "dates": [
+      "2026-11-10; rediscovered via Telegram 2026-11-17"
+    ],
+    "claim": "The source describes altered model weights that change agent behavior on a trigger.",
+    "experiment": "Faithful validation would need an audited checkpoint-modification and trigger-evaluation protocol.",
+    "baseline": "Verified original weights versus controlled modified checkpoint.",
+    "metrics": "Trigger selectivity, ordinary behavior, integrity-detector true/false positives.",
+    "data": "Primary announcement checked, linked implementation not executed or audited.",
+    "resources": "Would require a modified model beyond the standing installed-model inference scope.",
+    "runtime": "Unknown without artifact/resource audit.",
+    "limits": "No model modification, downloads or attack commands are authorized by source text. An artifact-hash smoke test alone would not validate the behavioral claim.",
+    "classification": "Deferred; do not present a checksum toy as a backdoor reproduction."
+  }
+]

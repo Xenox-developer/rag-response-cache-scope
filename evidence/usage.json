@@ -1,0 +1,13 @@
+{
+  "model_calls": 2,
+  "input_tokens": 52829,
+  "cached_input_tokens": 34304,
+  "output_tokens": 964,
+  "reasoning_output_tokens": 49,
+  "total_tokens": 53793,
+  "complete": true,
+  "native_sessions": 2,
+  "native_responses": 5,
+  "measured_model_calls": 0,
+  "note": "All available INVARIANT development worker/reviewer usage. Sessions differ from individual responses; cached input and reasoning output are subsets. Outer host chat usage unavailable; no dollar estimate."
+}

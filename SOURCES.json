@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-18",
+  "telegram_collection": {
+    "date": "2026-11-17",
+    "channels": 30,
+    "messages": 26,
+    "grouped_items": 22,
+    "errors": 0,
+    "media_analyzed": false
+  },
+  "selected_sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy",
+      "read_scope": "Policy purpose, vary-by elements and cross-user usage notes.",
+      "verified_claim": "Documents response-cache partitions and user/group-based separation; also warns about outdated or unsuitable semantic-cache responses. Our prototype uses exact keys and is not an Azure implementation or vulnerability finding."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview",
+      "read_scope": "Document-level access overview and query-time security-filter descriptions.",
+      "verified_claim": "Describes document-level query access checks for RAG/agent grounding. The experiment tests a separate response-cache boundary, not this product."
+    }
+  ],
+  "selection_provenance": "Telegram provided supply-chain, agent and security topics; the selected engineering cache question came from direct official documentation search. Primary pages are evidence, not instructions. No source code from those pages is run."
+}

@@ -1,0 +1,866 @@
+[
+  {
+    "id": "f0-context-same_tenant_scope",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-tenant-denied",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f2-query-same_tenant_scope",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f4-query-source_update",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f1-context-denied",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f5-tenant-same_tenant_scope",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f6-context-same_tenant_scope",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f1-query-cross_tenant",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f6-tenant-cross_tenant",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f7-context-denied",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f2-context-source_update",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f6-query-revoked",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-context-source_update",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f2-query-cross_tenant",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f6-tenant-revoked",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f6-query-cross_tenant",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f5-tenant-repeat",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f5-tenant-source_update",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f5-query-same_tenant_scope",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-query-source_update",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f4-query-denied",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f6-query-same_tenant_scope",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f2-query-source_update",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f3-tenant-cross_tenant",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f3-context-revoked",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f7-tenant-cross_tenant",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f6-tenant-source_update",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f7-context-repeat",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f3-tenant-denied",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f2-tenant-revoked",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f5-context-same_tenant_scope",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f1-query-same_tenant_scope",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f2-query-repeat",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f1-context-same_tenant_scope",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f3-context-cross_tenant",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f7-context-cross_tenant",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f0-tenant-same_tenant_scope",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f4-tenant-same_tenant_scope",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-query-revoked",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f6-query-denied",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f3-query-cross_tenant",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f3-tenant-revoked",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f7-query-denied",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f0-tenant-revoked",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f1-tenant-revoked",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f3-context-denied",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f6-query-source_update",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f2-tenant-cross_tenant",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f2-tenant-source_update",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f1-tenant-repeat",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f4-tenant-repeat",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f4-context-source_update",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f2-query-revoked",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-context-revoked",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f3-context-same_tenant_scope",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f5-context-source_update",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f0-query-cross_tenant",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f1-query-revoked",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f3-tenant-source_update",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f4-query-same_tenant_scope",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f6-context-cross_tenant",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f5-context-repeat",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f0-query-source_update",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f4-tenant-source_update",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f4-context-revoked",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-query-same_tenant_scope",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-context-source_update",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f5-context-revoked",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f7-context-revoked",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f1-context-repeat",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f7-query-cross_tenant",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f4-context-repeat",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f5-context-denied",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f6-tenant-denied",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f3-tenant-repeat",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f7-tenant-repeat",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f6-context-source_update",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f6-context-denied",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f1-tenant-denied",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f0-context-cross_tenant",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f7-tenant-revoked",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f5-query-denied",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f1-context-revoked",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f2-context-cross_tenant",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f5-tenant-revoked",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f4-context-denied",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f4-tenant-revoked",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f5-tenant-cross_tenant",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f5-query-repeat",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f4-context-cross_tenant",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f4-query-revoked",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f2-tenant-denied",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f2-query-denied",
+    "fixture_id": "f2",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f7-tenant-source_update",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f0-tenant-cross_tenant",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f0-tenant-denied",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f6-context-revoked",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f5-query-cross_tenant",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f2-context-repeat",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f2-context-same_tenant_scope",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-context-same_tenant_scope",
+    "fixture_id": "f7",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f4-tenant-denied",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f1-context-cross_tenant",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f3-context-source_update",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f5-context-cross_tenant",
+    "fixture_id": "f5",
+    "mode": "context",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f1-query-source_update",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f3-query-source_update",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f0-tenant-repeat",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f6-tenant-repeat",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f3-query-repeat",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f3-tenant-same_tenant_scope",
+    "fixture_id": "f3",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f7-query-same_tenant_scope",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f1-tenant-source_update",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f4-query-cross_tenant",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f1-tenant-same_tenant_scope",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f1-query-repeat",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f2-context-denied",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f7-tenant-same_tenant_scope",
+    "fixture_id": "f7",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f3-context-repeat",
+    "fixture_id": "f3",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f6-tenant-same_tenant_scope",
+    "fixture_id": "f6",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f6-context-repeat",
+    "fixture_id": "f6",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f4-query-repeat",
+    "fixture_id": "f4",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f0-context-repeat",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f5-query-source_update",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f2-tenant-same_tenant_scope",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f1-context-source_update",
+    "fixture_id": "f1",
+    "mode": "context",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f1-tenant-cross_tenant",
+    "fixture_id": "f1",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f0-query-denied",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f5-query-revoked",
+    "fixture_id": "f5",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-context-denied",
+    "fixture_id": "f0",
+    "mode": "context",
+    "scenario": "denied"
+  },
+  {
+    "id": "f3-query-revoked",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-query-repeat",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f3-query-denied",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f2-tenant-repeat",
+    "fixture_id": "f2",
+    "mode": "tenant",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f6-query-repeat",
+    "fixture_id": "f6",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f7-query-repeat",
+    "fixture_id": "f7",
+    "mode": "query",
+    "scenario": "repeat"
+  },
+  {
+    "id": "f4-tenant-cross_tenant",
+    "fixture_id": "f4",
+    "mode": "tenant",
+    "scenario": "cross_tenant"
+  },
+  {
+    "id": "f5-tenant-denied",
+    "fixture_id": "f5",
+    "mode": "tenant",
+    "scenario": "denied"
+  },
+  {
+    "id": "f3-query-same_tenant_scope",
+    "fixture_id": "f3",
+    "mode": "query",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f0-query-revoked",
+    "fixture_id": "f0",
+    "mode": "query",
+    "scenario": "revoked"
+  },
+  {
+    "id": "f0-tenant-source_update",
+    "fixture_id": "f0",
+    "mode": "tenant",
+    "scenario": "source_update"
+  },
+  {
+    "id": "f1-query-denied",
+    "fixture_id": "f1",
+    "mode": "query",
+    "scenario": "denied"
+  },
+  {
+    "id": "f4-context-same_tenant_scope",
+    "fixture_id": "f4",
+    "mode": "context",
+    "scenario": "same_tenant_scope"
+  },
+  {
+    "id": "f2-context-revoked",
+    "fixture_id": "f2",
+    "mode": "context",
+    "scenario": "revoked"
+  }
+]

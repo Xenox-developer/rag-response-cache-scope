@@ -1,0 +1,266 @@
+[
+  {
+    "id": "f0",
+    "query": "lookup plain",
+    "documents": [
+      {
+        "id": "doc-A-0",
+        "tenant": "alpha",
+        "query": "lookup plain",
+        "version": 1,
+        "value": "SYNTHETIC_A_0_v1"
+      },
+      {
+        "id": "doc-B-0",
+        "tenant": "beta",
+        "query": "lookup plain",
+        "version": 1,
+        "value": "SYNTHETIC_B_0_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-0"
+      ],
+      "peer-A": [
+        "doc-A-0"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-0"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_0_v2"
+  },
+  {
+    "id": "f1",
+    "query": "lookup with space",
+    "documents": [
+      {
+        "id": "doc-A-1",
+        "tenant": "alpha",
+        "query": "lookup with space",
+        "version": 1,
+        "value": "SYNTHETIC_A_1_v1"
+      },
+      {
+        "id": "doc-B-1",
+        "tenant": "beta",
+        "query": "lookup with space",
+        "version": 1,
+        "value": "SYNTHETIC_B_1_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-1"
+      ],
+      "peer-A": [
+        "doc-A-1"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-1"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_1_v2"
+  },
+  {
+    "id": "f2",
+    "query": "lookup café",
+    "documents": [
+      {
+        "id": "doc-A-2",
+        "tenant": "alpha",
+        "query": "lookup café",
+        "version": 1,
+        "value": "SYNTHETIC_A_2_v1"
+      },
+      {
+        "id": "doc-B-2",
+        "tenant": "beta",
+        "query": "lookup café",
+        "version": 1,
+        "value": "SYNTHETIC_B_2_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-2"
+      ],
+      "peer-A": [
+        "doc-A-2"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-2"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_2_v2"
+  },
+  {
+    "id": "f3",
+    "query": "lookup quote \"",
+    "documents": [
+      {
+        "id": "doc-A-3",
+        "tenant": "alpha",
+        "query": "lookup quote \"",
+        "version": 1,
+        "value": "SYNTHETIC_A_3_v1"
+      },
+      {
+        "id": "doc-B-3",
+        "tenant": "beta",
+        "query": "lookup quote \"",
+        "version": 1,
+        "value": "SYNTHETIC_B_3_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-3"
+      ],
+      "peer-A": [
+        "doc-A-3"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-3"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_3_v2"
+  },
+  {
+    "id": "f4",
+    "query": "lookup line\nbreak",
+    "documents": [
+      {
+        "id": "doc-A-4",
+        "tenant": "alpha",
+        "query": "lookup line\nbreak",
+        "version": 1,
+        "value": "SYNTHETIC_A_4_v1"
+      },
+      {
+        "id": "doc-B-4",
+        "tenant": "beta",
+        "query": "lookup line\nbreak",
+        "version": 1,
+        "value": "SYNTHETIC_B_4_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-4"
+      ],
+      "peer-A": [
+        "doc-A-4"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-4"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_4_v2"
+  },
+  {
+    "id": "f5",
+    "query": "lookup path/a",
+    "documents": [
+      {
+        "id": "doc-A-5",
+        "tenant": "alpha",
+        "query": "lookup path/a",
+        "version": 1,
+        "value": "SYNTHETIC_A_5_v1"
+      },
+      {
+        "id": "doc-B-5",
+        "tenant": "beta",
+        "query": "lookup path/a",
+        "version": 1,
+        "value": "SYNTHETIC_B_5_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-5"
+      ],
+      "peer-A": [
+        "doc-A-5"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-5"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_5_v2"
+  },
+  {
+    "id": "f6",
+    "query": "lookup braces {}",
+    "documents": [
+      {
+        "id": "doc-A-6",
+        "tenant": "alpha",
+        "query": "lookup braces {}",
+        "version": 1,
+        "value": "SYNTHETIC_A_6_v1"
+      },
+      {
+        "id": "doc-B-6",
+        "tenant": "beta",
+        "query": "lookup braces {}",
+        "version": 1,
+        "value": "SYNTHETIC_B_6_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-6"
+      ],
+      "peer-A": [
+        "doc-A-6"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-6"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_6_v2"
+  },
+  {
+    "id": "f7",
+    "query": "lookup zero 0",
+    "documents": [
+      {
+        "id": "doc-A-7",
+        "tenant": "alpha",
+        "query": "lookup zero 0",
+        "version": 1,
+        "value": "SYNTHETIC_A_7_v1"
+      },
+      {
+        "id": "doc-B-7",
+        "tenant": "beta",
+        "query": "lookup zero 0",
+        "version": 1,
+        "value": "SYNTHETIC_B_7_v1"
+      }
+    ],
+    "grants": {
+      "owner-A": [
+        "doc-A-7"
+      ],
+      "peer-A": [
+        "doc-A-7"
+      ],
+      "reader-A": [],
+      "owner-B": [
+        "doc-B-7"
+      ]
+    },
+    "updated_value": "SYNTHETIC_A_7_v2"
+  }
+]

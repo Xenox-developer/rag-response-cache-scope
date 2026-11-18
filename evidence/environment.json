@@ -1,0 +1,10 @@
+{
+  "python": "3.12.1 (v3.12.1:2305ca5144, Dec  7 2023, 17:23:38) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "invariant": "invariant 0.3.1",
+  "development_model": "gpt-6.1-terra",
+  "effort": "medium",
+  "seed": 20261118,
+  "measured_model_calls": 0,
+  "network_calls_in_primary_matrix": 0
+}
