@@ -1,0 +1,7 @@
+{
+  "positive": true,
+  "negative": true,
+  "freshness_separate": true,
+  "missing_request_rejected": true,
+  "malformed_boolean_rejected": true
+}

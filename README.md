@@ -51,6 +51,24 @@ A security failure is a final 200 response whose source document is outside the 
 
 The protected eight-check suite also validates same-context reuse across principals, changed content without a version increment, absence of negative caching, input/return/snapshot copying and invalid mode handling. Tests compare behavior and documented snapshots, permitting different valid internal cache-key representations.
 
+## Measured results
+
+| Cache policy | Unauthorized answers | Stale answers after update | Valid repeat cache hits | Correct cold denials |
+|---|---:|---:|---:|---:|
+| Query only | 24/24 | 8/8 | 8/8 | 8/8 |
+| Tenant + query | 16/24 | 8/8 | 8/8 | 8/8 |
+| Fresh authorized context | 0/24 | 0/8 | 8/8 | 8/8 |
+
+The query-only policy exposed the wrong permitted-for-another-caller answer in all three security schedules: cross-tenant, same-tenant scope and revocation, 8/8 each. Tenant partitioning eliminated the cross-tenant cases, 0/8, but left 8/8 same-tenant scope failures and 8/8 revocation failures. Updating a still-authorized source was counted separately as freshness, not another access violation.
+
+Correct final status/provenance/content across all schedules: query-only 16/48; tenant 24/48; fresh context 48/48. Each policy retained 8/8 valid repeat hits, so the context result was not obtained by disabling cache reuse. The fixed checks separately confirmed reuse across two principals with the same allowed source and invalidation when content changes without a version bump. Those unit checks are not additional primary trials.
+
+All 144 raw trials, request/mutation events, cache snapshots, provenance fields and generation counters were checked against a separate policy replay, together with 11 frozen scientific hashes. No cells were missing. Fixed implementation checks passed 8/8. The data are deterministic coverage examples, not independently sampled production reliability events.
+
+![Cache authorization, freshness and control counts](results/cache-scope.png)
+
+Chart alt text: Query-only, tenant+query and fresh-context policies respectively returned unauthorized answers in 24/24, 16/24 and 0/24 access-control trials, and stale answers in 8/8, 8/8 and 0/8 update trials. Every policy had 8/8 valid repeat hits and 8/8 correct cold denials. `plot.py` reads the independent audit JSON; PNG/SVG labels contain only factual conditions, metrics, units and counts.
+
 ## INVARIANT and available usage
 
 [INVARIANT](https://github.com/Xenox-developer/invariant) implements the experiment's `cache.py` through the current Codex subscription, coordinates the fixed acceptance checks, performs semantic implementation review and applies the reviewed candidate with protected-input verification. The host harness then measures the owned Python cache sequences. Actual version, IDs, receipts, review verdict, application proof and all available worker/reviewer usage are retained in `evidence/invariant.json` and `evidence/usage.json`. Sessions and individual model responses are different counts; cached input/reasoning tokens are subsets. Host-chat usage is unavailable. Subscription tokens are not converted to dollar costs. Primary measured model calls: zero.
@@ -65,3 +83,5 @@ This is a synchronous in-memory prototype with immediate authoritative grants an
 - Microsoft Learn, *Document-level access control in Foundry IQ (Azure AI Search)*, checked November 18, 2026: https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview . The overview describes query-time source access checks. We test a separate answer-reuse boundary, not a product defect.
 
 Authored code, synthetic fixtures and results are shared under the included MIT license. Primary documentation is linked rather than redistributed. No credentials, real private answers, account state, Telegram sessions or unrelated project files belong in this repository.
+
+Figure tooling reference: Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel, Aubrey M. Brueckner (2026), Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents, arXiv:2609.00065, current record v2 checked November 18, 2026: https://doi.org/10.48550/arXiv.2609.00065 . The installed Matplotlib skill informed figure construction; it is not evidence for the cache results. Existing Matplotlib 3.10.3 was used without an upgrade.

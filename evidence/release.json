@@ -1,0 +1,7 @@
+{
+  "measured_implementation_commit": "f87bf534b485d2a23773e4e772d2cf5094a58ec5",
+  "frozen_sha256": "d4652165c73d5ac1ab959d4efe58aa45590ad6aeb7323a6b7c7657fb72f58797",
+  "primary_run_sha256": "0f2a2a0b377364d7c5fb130943298b8b5006daee7901aaf0ecca01808cf5b845",
+  "post_sha256": "0869226aacc3271df78d42e755c48d8a98e60e7aac0be98a6898c73199d79f7a",
+  "note": "This records the tested premeasurement commit; use Git HEAD for the hosted release commit rather than a circular self hash."
+}

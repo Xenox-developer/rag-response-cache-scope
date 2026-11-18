@@ -1,0 +1,7 @@
+{
+  "matplotlib": "3.10.3",
+  "source": "results/audit.json",
+  "script": "plot.py",
+  "transform": "Raw audited numerators and predeclared denominators; no intervals, normalization, smoothing or missing-cell exclusion.",
+  "destination": "LinkedIn factual metrics image"
+}

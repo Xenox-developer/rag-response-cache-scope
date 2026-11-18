@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "trials": 144,
+  "frozen_files": 11,
+  "summary": {
+    "query": {
+      "trials": 48,
+      "security_trials": 24,
+      "unauthorized": 24,
+      "stale": 8,
+      "contract_ok": 16,
+      "repeat_hit": 8,
+      "cold_denied": 8,
+      "unauthorized_by_scenario": {
+        "cross_tenant": 8,
+        "same_tenant_scope": 8,
+        "revoked": 8
+      }
+    },
+    "tenant": {
+      "trials": 48,
+      "security_trials": 24,
+      "unauthorized": 16,
+      "stale": 8,
+      "contract_ok": 24,
+      "repeat_hit": 8,
+      "cold_denied": 8,
+      "unauthorized_by_scenario": {
+        "cross_tenant": 0,
+        "same_tenant_scope": 8,
+        "revoked": 8
+      }
+    },
+    "context": {
+      "trials": 48,
+      "security_trials": 24,
+      "unauthorized": 0,
+      "stale": 0,
+      "contract_ok": 48,
+      "repeat_hit": 8,
+      "cold_denied": 8,
+      "unauthorized_by_scenario": {
+        "cross_tenant": 0,
+        "same_tenant_scope": 0,
+        "revoked": 0
+      }
+    }
+  },
+  "notes": "Selected deterministic cache counterexamples; no inference, HTTP, embeddings or deployed incidents. Counts are not failure-probability estimates."
+}
